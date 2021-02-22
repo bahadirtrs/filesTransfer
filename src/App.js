@@ -21,7 +21,7 @@ function LogoTitle() {
   return (
     <View style={{flex: 1, flexDirection:'row',justifyContent: 'space-between', alignItems: 'center', padding:20, marginBottom:0}}>
     <Text> </Text>
-     <Text style={{fontSize: 18,  color: '#555555'}} >Dosya Yükle</Text>
+     <Text style={{fontSize: 18,  color: '#555555'}}>Dosya Yükle</Text>
      <Text></Text>
    	<TouchableOpacity>
          <FontAwesome5 name={'globe-americas'} size={25} color='#555555' />
