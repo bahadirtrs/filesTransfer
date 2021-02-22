@@ -16,7 +16,7 @@ const HomeScreen = ({navigation}) => {
         setInternet(false);
       }
     });
-  }, []);
+}, []); 
 
  
   return (
@@ -60,19 +60,19 @@ const styles = StyleSheet.create({
   title: {
     color:color.textColor,
     fontSize: 24,
-    fontFamily: 'Poppins-Bold',
     marginHorizontal: 20,
     marginTop: 20,
     padding:3,
     textAlign:'center',
+    fontFamily:'GoogleSans-Bold'
   },
 
   Description: {
     fontSize: 12,
     color:color.textColor,
-    fontFamily: 'Poppins-Regular',
     textAlign: 'center',
     paddingHorizontal: 30,
     paddingBottom: 20,
+    fontFamily:'GoogleSans-Regular'
   },
 });

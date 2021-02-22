@@ -1,14 +1,14 @@
 import React from 'react';
-import {View, Button, Text, Image, StyleSheet} from 'react-native';
+import {View, StatusBar, Text, Image, StyleSheet} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Onboarding from 'react-native-onboarding-swiper';
-
+import color from '../constans/color';
 const Skip = ({...props}) => (
   <TouchableOpacity
     color="#f8bd2c"
-    style={{paddingLeft: 30, fontFamily: 'Poppins-Bold'}}
+    style={{paddingLeft: 30}}
     {...props}>
-    <Text style={{fontFamily: 'Poppins-Medium', color: '#fff'}}>
+    <Text style={{ color: '#fff', fontFamily:'GoogleSans-Regular'}}>
       Tanıtımı Geç
     </Text>
   </TouchableOpacity>
@@ -16,33 +16,35 @@ const Skip = ({...props}) => (
 
 const Next = ({...props}) => (
   <TouchableOpacity color="#f8bd2c" style={{paddingRight: 30}} {...props}>
-    <Text style={{fontFamily: 'Poppins-Medium', color: '#fff'}}>İleri</Text>
+    <Text style={{ color: '#fff',fontFamily:'GoogleSans-Regular',}}>İleri</Text>
   </TouchableOpacity>
 );
 
 const Done = ({...props}) => (
   <TouchableOpacity
     color="#f8bd2c"
-    style={{paddingRight: 30, fontFamily: 'Poppins-Bold'}}
+    style={{paddingRight:30,}}
     {...props}>
-    <Text style={{fontFamily: 'Poppins-Medium', color: '#fff'}}>Tamamla</Text>
+    <Text style={{color: '#fff',fontFamily:'GoogleSans-Regular',}}>Tamamla</Text>
   </TouchableOpacity>
 );
 
 const OnLoginScreen = ({navigation}) => {
   return (
+    <>
+    <StatusBar hidden={true} barStyle='light-content' backgroundColor={'#0077b6'}/>   
     <Onboarding
       SkipButtonComponent={Skip}
       NextButtonComponent={Next}
       DoneButtonComponent={Done}
-      onSkip={() => navigation.navigate('AnaSayfa')}
-      onDone={() => navigation.navigate('AnaSayfa')}
-      titleStyles={{fontFamily: 'Poppins-Bold', fontSize: 45, margin: 20}} //
+      onSkip={() => navigation.replace('AnaSayfa')}
+      onDone={() => navigation.replace('AnaSayfa')}
+      titleStyles={{ fontSize: 45, margin: 20,fontFamily:'GoogleSans-Medium' }} //
       subTitleStyles={{
-        fontFamily: 'Poppins-Medium',
-        fontSize: 14,
+        fontFamily:'GoogleSans-Regular',
+        fontSize: 16,
         padding: 10,
-        top: -40,
+        top: -50,
       }}
       pages={[
         {
@@ -132,6 +134,7 @@ const OnLoginScreen = ({navigation}) => {
         },
       ]}
     />
+    </>
   );
 };
 export default OnLoginScreen;
@@ -141,4 +144,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
 });

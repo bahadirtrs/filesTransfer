@@ -10,7 +10,7 @@ import NoConnected from '../components/Connected/NoConnected';
 import color from '../constans/color';
 
 const FileUpload = ({navigation}) => {
-  const [random, setRandom] = useState(Math.floor(Math.random() * 8000) + 1000);
+  const [random, setRandom] = useState(Math.floor(Math.random() * 80000) + 10000);
   const [data, setData] = useState([]);
   const [change, setChange] = useState(false);
   const [control, setControl] = useState(1);
@@ -80,7 +80,11 @@ const FileUpload = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <StatusBar hidden={false} barStyle="dark-content" backgroundColor={color.white} />
+      <StatusBar hidden={false} barStyle="dark-content" backgroundColor={color.mainBackground} />
+      <View style={{flexDirection:'row', justifyContent:'space-between', alignItems:'flex-start', width:'100%', paddingVertical:10, paddingHorizontal:30}} >
+            <FontAwesome5 name={'bars'} size={25} color={color.mainBackColor} />
+            <FontAwesome5 name={'shield-alt'} size={25} color={color.mainBackColor} />
+            </View>
       {internet ?
         <View style={styles.webContainer}>
           <View style={{position:'absolute', top:0, right:150,width:70,  height:70, backgroundColor:'#e1e1e150', borderRadius:10,  transform: [{ rotate: "45deg" }] }}></View>
@@ -113,9 +117,9 @@ const FileUpload = ({navigation}) => {
             <Menu
               homeScreenPress=  {() => {navigation.navigate('AnaSayfa'); }}
               searchScreenPress={() => {navigation.navigate('AnaSayfa'); }}
-              fileUploadPress=  {() => {navigation.navigate('DosyaAl', {title: 'Lütfen Pin Kodunu Gir',});}}
+              fileUploadPress=  {() => {navigation.push('DosyaAl', {title: 'Lütfen Pin Kodunu Gir',});}}
               webScreenPress=   {() => {navigation.navigate('WebSitesi');}}
-              helpScreenPress=  {() => {navigation.navigate('YardımAl');}}
+              helpScreenPress=  {() => {navigation.navigate('OnLoginScreen');}}
               oneIconName="house-user"
               twoIconName="search"
               thirdIconName="download"
@@ -171,26 +175,27 @@ const styles = StyleSheet.create({
 
   title: {
     color: color.textColor,
-    fontSize: 20,
-    fontFamily: 'Poppins-Bold',
+    fontSize: 24,
     marginHorizontal: 20,
     paddingVertical: 10,
     textAlign: 'justify',
+    fontFamily:'GoogleSans-Bold'
   },
 
   Description: {
     fontSize: 11,
     color:color.textColor,
-    fontFamily: 'Poppins-Regular',
     textAlign: 'center',
     paddingHorizontal: 30,
     paddingBottom: 20,
+    fontFamily:'GoogleSans-Regular'
   },
 
   pinText: {
-    fontSize: 80,
+    fontSize: 70,
     color:color.textColor,
-    fontFamily: 'Volte-Bold',
-    padding:10
+    padding:10,
+    fontFamily:'GoogleSans-Bold'
+    
   },
 });

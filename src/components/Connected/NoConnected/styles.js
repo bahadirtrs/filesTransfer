@@ -4,13 +4,14 @@ export default () => StyleSheet.create({
    noConnectedTitle:{
        fontSize: 20, 
        color: '#555', 
-       fontFamily: 'Poppins-Bold',
       marginTop:20,
+      fontFamily:'GoogleSans-Bold'
    },
        
 
     noConnectedDes:{
         fontSize: 12, 
         color: '#555', 
-        fontFamily: 'Poppins-Regular'}  
+        fontFamily:'GoogleSans-Regular'
+      }
      });

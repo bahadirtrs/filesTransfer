@@ -3,6 +3,8 @@ const Colors = {
     black: '#000',
     mainColor:'#eee',
     textColor:'#555',
+    buttonColor:'#777',
+    butonActivityColor:'#555',
     orange:'#F8BD2C',
     green:'#40916c',
     mainBackColor:'#40916c',

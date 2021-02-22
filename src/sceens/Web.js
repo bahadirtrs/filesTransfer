@@ -15,7 +15,7 @@ function Web({navigation}) {
         searchScreenPress={() => {navigation.navigate('AnaSayfa');}}
         fileUploadPress={() => {navigation.navigate('DosyaYukle');}}
         webScreenPress={() => {navigation.navigate('WebSitesi');}}
-        helpScreenPress={() => {navigation.navigate('YardımAl');}}
+        helpScreenPress={() => {navigation.navigate('OnLoginScreen');}}
         oneIconName="house-user"
         twoIconName="search"
         thirdIconName="upload"
@@ -44,7 +44,6 @@ const styles = StyleSheet.create({
   url: {
     color:color.mainBackColor,
     fontSize: 25,
-    fontFamily: 'Poppins-ExtraBold',
     marginHorizontal: 20,
     marginTop: 50,
   },
@@ -52,13 +51,11 @@ const styles = StyleSheet.create({
   urlDes: {
     color:color.mainBackColor,
     fontSize: 12,
-    fontFamily: 'Poppins-Regular',
   },
 
   text: {
     color: '#555',
     fontSize: 16,
-    fontFamily: 'Poppins-ExtraBold',
     margin: 60,
     marginTop: 20,
     textAlign: 'center',

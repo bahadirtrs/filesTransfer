@@ -48,7 +48,7 @@ function FileDescription({route, navigation}) {
     navigation.replace('DeleteFile', {title:'Dosyanız Silindi', des:'Dosyanız ve Kayıt Bilgileri tüm detaylarıyla birlikte olarak sistemden kaldırıldı. PIN Kodunuz yok edildi.'});
   };
   var bold = { 
-    fontFamily: 'Poppins-Bold',
+    
 };
   return (
     <View style={styles.container}>
@@ -116,7 +116,7 @@ function FileDescription({route, navigation}) {
               searchScreenPress={() => {setModalVisible(true);}}
               fileUploadPress={() => {setModalVisible2(true); }}
               webScreenPress={() => {navigation.navigate('WebSitesi');}}
-              helpScreenPress={() => {navigation.navigate('YardımAl');}}
+              helpScreenPress={() => {navigation.navigate('OnLoginScreen');}}
               oneIconName="house-user"
               twoIconName="arrow-down"
               thirdIconName="trash"
@@ -159,8 +159,8 @@ const styles = StyleSheet.create({
     fontSize: 10,
     padding: 10,
     color:color.black,
-    fontFamily: 'Poppins-Bold',
     alignItems: 'center',
+    fontFamily:'GoogleSans-Medium'
   },
 
   infoContainer:{
@@ -177,11 +177,11 @@ const styles = StyleSheet.create({
   },
 
   footerHeader:{
-    fontSize: 8,
+    fontSize: 10,
     textAlign: 'center',
-    fontFamily: 'Poppins-Regular',
     paddingVertical: 40,
     paddingHorizontal:20,
+    fontFamily:'GoogleSans-Regular'
   },
 
   centeredView: {
@@ -219,9 +219,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal:30,
     paddingVertical:15,
-    fontFamily: 'Poppins-Regular',
     textAlign:'center',
     color:color.textColor,
+    fontFamily:'GoogleSans-Regular'
   },
 
   clickContainer:{
@@ -233,7 +233,6 @@ const styles = StyleSheet.create({
   },
 
   click:{
-    fontFamily: 'Poppins-Regular',
     fontSize: 12
   },
 
@@ -242,8 +241,8 @@ const styles = StyleSheet.create({
     fontSize: 8,
     marginTop: 30,
     textAlign: 'center',
-    fontFamily: 'Poppins-Regular',
-    color:color.textColor
+    color:color.textColor,
+    fontFamily:'GoogleSans-Regular'
   },
 
 });

@@ -1,7 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, TouchableOpacity} from 'react-native';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-
+import {StyleSheet, View} from 'react-native';
 import IconButton from '../components/Buttons/IconButton';
 import TopIconButton from '../components/Buttons/TopIconButton';
 

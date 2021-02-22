@@ -7,12 +7,12 @@ export default () => StyleSheet.create({
         marginTop: 0,
         textAlign: 'center',
         color: '#444',
-        fontFamily: 'Volte',
+        fontFamily:'GoogleSans-Medium'
       },
     
       learn: {
         fontSize: 12,
-        fontFamily: 'Volte-Bold',
         color: '#444',
+        fontFamily:'GoogleSans-Bold'
       },
   });

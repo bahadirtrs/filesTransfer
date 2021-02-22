@@ -11,6 +11,10 @@ function Download({route,navigation}) {
   const {pin} = route.params;
   return (
     <View style={styles.container}>
+       <View style={{flexDirection:'row', justifyContent:'space-between', alignItems:'flex-start', width:'100%', paddingVertical:10, paddingHorizontal:30}} >
+            <FontAwesome5 name={'bars'} size={25} color={color.mainBackColor} />
+            <FontAwesome5 name={'shield-alt'} size={25} color={color.mainBackColor} />
+            </View>
       <View style={{flex: 1,flexDirection: 'column',justifyContent: 'center',alignItems: 'center',textAlign: 'center', }}>
         <View style={{height:10, }} >
           <WebView source={{uri:'http://bahadirtiras.com.tr/zzz/client-end-mobile.php?pin='+ pin}}/>
@@ -42,9 +46,9 @@ const styles = StyleSheet.create({
   title: {
     color:color.textColor,
     fontSize: 32,
-    fontFamily: 'Poppins-Bold',
     marginHorizontal: 20,
     marginTop: 100,
+    fontFamily:'GoogleSans-Bold',
   },
 
   bottom: {
@@ -53,38 +57,37 @@ const styles = StyleSheet.create({
     marginTop: 0,
     textAlign: 'center',
     color: color.textColor,
-    fontFamily: 'Volte',
+    fontFamily:'GoogleSans-Regular',
   },
 
   learn: {
     fontSize: 12,
-    fontFamily: 'Volte-Bold',
     color: color.textColor,
+    fontFamily:'GoogleSans-Medium',
   },
 
 
   url: {
     color: color.textColor,
     fontSize: 20,
-    fontFamily: 'Poppins-Bold',
     marginHorizontal: 20,
     marginTop: 30,
-    textAlign:'center'
+    textAlign:'center',
+    fontFamily:'GoogleSans-Bold',
   },
 
   urlDes: {
     color: color.textColor,
     fontSize: 12,
-    fontFamily: 'Poppins-Regular',
     paddingHorizontal:30,
     textAlign:'center',
     marginBottom:20,
+    fontFamily:'GoogleSans-Regular',
   },
 
   text: {
     color: color.textColor,
     fontSize: 16,
-    fontFamily: 'Poppins-ExtraBold',
     margin: 60,
     marginTop: 20,
     textAlign: 'center',

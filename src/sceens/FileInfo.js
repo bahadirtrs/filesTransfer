@@ -133,7 +133,7 @@ function FileInfo({route, navigation}) {
               searchScreenPress={() => {setModalVisible(true); }}
               fileUploadPress={() => {setModalVisible2(true); }}
               webScreenPress={() => {navigation.navigate('WebSitesi');}}
-              helpScreenPress={() => {navigation.navigate('YardımAl');}}
+              helpScreenPress={() => {navigation.navigate('OnLoginScreen');}}
               oneIconName="house-user"
               twoIconName="arrow-down"
               thirdIconName="trash"
@@ -197,9 +197,9 @@ const styles = StyleSheet.create({
   footerHeader:{
     fontSize: 8,
     textAlign: 'center',
-    fontFamily: 'Poppins-Regular',
     paddingVertical: 40,
     paddingHorizontal:20,
+    fontFamily:'GoogleSans-Regular'
   },
 
   centeredView: {
@@ -237,7 +237,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal:30,
     paddingVertical:15,
-    fontFamily: 'Poppins-Regular',
     textAlign:'center',
     color:color.textColor,
   },
@@ -251,7 +250,6 @@ const styles = StyleSheet.create({
   },
 
   click:{
-    fontFamily: 'Poppins-Regular',
     fontSize: 12
   },
 
@@ -259,7 +257,7 @@ const styles = StyleSheet.create({
     paddingHorizontal:40,
     fontSize: 8,
     textAlign: 'center',
-    fontFamily: 'Poppins-Regular',
-    color:color.textColor
+    color:color.textColor,
+    fontFamily:'GoogleSans-Regular'
   },
 });

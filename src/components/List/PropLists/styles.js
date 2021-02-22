@@ -12,12 +12,10 @@ export default () => StyleSheet.create({
       infoText: {
         fontSize: 12,
         color: '#555',
-        fontFamily: 'Poppins-Bold',
       },
       infoData: {
         fontSize: 13,
         color: '#555',
-        fontFamily: 'Poppins-Regular',
       },
     
   });

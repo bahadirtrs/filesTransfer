@@ -17,8 +17,8 @@ buton: {
 
   butonText: {
     fontSize: 16,
-    fontFamily: 'Poppins-Medium',
     color: '#eee',
+    fontFamily:'GoogleSans-Regular'
   },
 
   });

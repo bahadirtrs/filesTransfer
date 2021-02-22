@@ -37,8 +37,8 @@ const Splash = ({navigation}) => {
           <StatusBar hidden={false} barStyle="dark-content" backgroundColor={color.mainBackColor} />
            <Animated.View style={[styles.hexContainer, sizeStyle]}>
                 <Image source={require('../img/file.png')} style={styles.Logo} />
-                <Text style={{  fontSize:15, paddingTop:10, color:'#fff', fontFamily:'Volte-Bold'}}> Dosya Paylaşımcınız</Text>
-                <Text style={{  fontSize:10, paddingTop:10, color:'#fff', fontFamily:'Volte'}}> Powered by bhdrtrs</Text>
+                <Text style={{  fontSize:15, paddingTop:10, color:'#fff'}}> Dosya Paylaşımcınız</Text>
+                <Text style={{  fontSize:10, paddingTop:10, color:'#fff'}}> Powered by bhdrtrs</Text>
         </Animated.View>
       </View>
    
@@ -74,7 +74,6 @@ const styles = StyleSheet.create({
   title: {
     color: '#4d4d4d',
     fontSize: 20,
-    fontFamily: 'Poppins-Bold',
     marginHorizontal: 20,
     marginTop: 20,
     padding:3,
@@ -83,7 +82,6 @@ const styles = StyleSheet.create({
   Description: {
     fontSize: 12,
     color: '#4d4d4d',
-    fontFamily: 'Poppins-Regular',
     textAlign: 'center',
     paddingHorizontal: 30,
     paddingBottom: 20,
