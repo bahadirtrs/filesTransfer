@@ -3,8 +3,6 @@ import {StatusBar, Image, Text,View, TouchableOpacity} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import Upload from './sceens/Upload';
-
 import Splash from './sceens/Splash';
 import HomeScreen from './sceens/HomeScreen';
 import FileUpload from './sceens/FileUpload';
@@ -45,7 +43,6 @@ function DownloandLogoTitle() {
   );
 }
 
-
 export default function App() {
   
   const [isFirstLauncher, setIsFirstLauncher]= useState(null);
@@ -60,8 +57,6 @@ export default function App() {
       }
     });
   }, []);
-
-
 
   if(isFirstLauncher=== null){
     return null;
